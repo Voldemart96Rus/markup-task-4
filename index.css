@@ -1,0 +1,82 @@
+input[id='button'],
+.horizontally
+{
+    display: none;
+}
+
+input:checked ~ label > .horizontally
+{
+    display: inline;
+}
+
+input:checked ~ label > .vertically
+{
+    display: none;
+}
+
+input:not(:checked) ~ article > section > .vertical-view
+{
+    display: none;
+}
+
+input:checked ~ article > section > .horizontal-view
+{
+    display: none;
+}
+
+input:not(:checked) ~ article > section 
+{
+    display: inline-block;
+    width: 250px;
+}
+
+input:checked ~ article > section 
+{
+    display: block;
+    width: 600px;
+}
+
+input:checked ~ article > section > img
+{
+    width: 550px;
+    margin-left: 25px;
+}
+
+input:checked ~ article > section 
+{
+    margin: 0 auto 2px;
+}
+
+.vertical-view > p
+{
+    margin: 5px 0 10px 25px;
+}
+
+input:checked ~ article > section > h2
+{
+    margin-left: 25px;
+}
+
+section 
+{
+    margin: 2px 1px;
+    border: 1px solid #dbd9d9;
+}
+
+section:hover 
+{
+    box-shadow: 0 0 5px 1px #505050;
+}
+
+h2
+{
+    margin: 0 0 10px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p
+{
+    margin: 0 0 0 20px;
+    color: #a5a5a5;
+}
