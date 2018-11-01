@@ -64,9 +64,22 @@ section
     border: 1px solid #dbd9d9;
 }
 
-section:hover 
+section:hover,
+img:hover
 {
     box-shadow: 0 0 5px 1px #505050;
+    
+}
+
+h2:hover
+{
+    text-shadow: 0 0 5px #fbff00;
+    
+}
+
+p:hover
+{
+    text-shadow: 0 0 5px #002fff;
 }
 
 h2
