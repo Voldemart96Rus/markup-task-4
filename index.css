@@ -14,35 +14,36 @@ input:checked ~ label > .vertically
     display: none;
 }
 
-input:not(:checked) ~ article > section > .vertical-view
+input:not(:checked) ~ .cats-page > section > .vertical-view
 {
     display: none;
 }
 
-input:checked ~ article > section > .horizontal-view
+input:checked ~ .cats-page > section > .horizontal-view
 {
     display: none;
 }
 
-input:not(:checked) ~ article > section 
+input:not(:checked) ~ .cats-page > section 
 {
     display: inline-block;
     width: 250px;
 }
 
-input:checked ~ article > section 
+input:checked ~ .cats-page > section 
 {
     display: block;
     width: 600px;
 }
 
-input:checked ~ article > section > img
+input:checked ~ .cats-page > section > img
 {
     width: 550px;
+    height: 350px;
     margin-left: 25px;
 }
 
-input:checked ~ article > section 
+input:checked ~ .cats-page > section 
 {
     margin: 0 auto 2px;
 }
@@ -52,7 +53,7 @@ input:checked ~ article > section
     margin: 5px 0 10px 25px;
 }
 
-input:checked ~ article > section > h2
+input:checked ~ .cats-page > section > h2
 {
     margin-left: 25px;
 }
