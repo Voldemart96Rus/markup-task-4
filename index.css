@@ -14,36 +14,36 @@ input:checked ~ label > .vertically
     display: none;
 }
 
-input:not(:checked) ~ .cats-page > section > .vertical-view
+input:not(:checked) ~ .cats-page > .item > .vertical-view
 {
     display: none;
 }
 
-input:checked ~ .cats-page > section > .horizontal-view
+input:checked ~ .cats-page > .item > .horizontal-view
 {
     display: none;
 }
 
-input:not(:checked) ~ .cats-page > section 
+input:not(:checked) ~ .cats-page > .item 
 {
     display: inline-block;
     width: 250px;
 }
 
-input:checked ~ .cats-page > section 
+input:checked ~ .cats-page > .item 
 {
     display: block;
     width: 600px;
 }
 
-input:checked ~ .cats-page > section > img
+input:checked ~ .cats-page > .item > img
 {
     width: 550px;
     height: 350px;
     margin-left: 25px;
 }
 
-input:checked ~ .cats-page > section 
+input:checked ~ .cats-page > .item 
 {
     margin: 0 auto 2px;
 }
@@ -53,43 +53,43 @@ input:checked ~ .cats-page > section
     margin: 5px 0 10px 25px;
 }
 
-input:checked ~ .cats-page > section > h2
+input:checked ~ .cats-page > .item > .cats-name
 {
     margin-left: 25px;
 }
 
-section 
+.item 
 {
     margin: 2px 1px;
     border: 1px solid #dbd9d9;
 }
 
-section:hover,
+.item:hover,
 img:hover
 {
     box-shadow: 0 0 5px 1px #505050;
     
 }
 
-h2:hover
+.cats-name:hover
 {
     text-shadow: 0 0 5px #fbff00;
     
 }
 
-p:hover
+.description:hover
 {
     text-shadow: 0 0 5px #002fff;
 }
 
-h2
+.cats-name
 {
     margin: 0 0 10px 20px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-p
+.description
 {
     margin: 0 0 0 20px;
     color: #a5a5a5;
